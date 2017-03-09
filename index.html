@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  var first_name = prompt('Введите первое имя!')
+  var second_name = prompt('Введите второе имя!')
+  var third_name = prompt('Введите третье имя!')
+  var fourth_name = prompt('Введите четвертое имя!')
+  var fifth_name = prompt('Введите пятое имя!')
+  var names_list = []
+  names_list.push(first_name)
+  names_list.push(second_name)
+  names_list.push(third_name)
+  names_list.push(fourth_name)
+  names_list.push(fifth_name)
+  var result = []
+  var your_name = prompt('Введите ваше имя!')
+  for (var i=0 ; i<names_list.length; i++){
+    if (names_list[i] == your_name){
+      result.push("zxc");
+    }
+  }
+  if (result.length > 0){
+    alert(your_name+', вы успешно вошли!');
+  }
+  else{
+    alert('Error');
+  }
+</script>
+</body>
+</html>
